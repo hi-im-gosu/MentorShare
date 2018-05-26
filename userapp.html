@@ -1,0 +1,54 @@
+<!--
+Below is the <head> for linking
+!-->
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-messaging.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-functions.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
+  <script src="script.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+
+<!--
+Below is two divs of different color followed by the actual form
+!-->
+
+<div id="signupbackground">
+  <h1>Sign Up</h1>
+</div>
+
+<!--
+form action=javascript:signup() :::::: means that when the form is submitted, the signup() function will run
+!-->
+
+<div id="signupform">
+<form action="javascript:signup()";>
+
+    <label class="label" for="email"><b>Email</b></label>
+    <input type="text" id="email" placeholder="Enter Email" name="email" required>
+<br><br>
+    <label class="label" for="psw"><b>Password</b></label>
+    <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+<br><br>
+    <label class="label" for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" id="psw-repeat" placeholder="Repeat Password" name="psw-repeat" required>
+<br><br>
+    <label class="label">
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+<br><br>
+    <div class="clearfix">
+<button type="submit" class="signupbtn bttn-material-flat bttn-md bttn-primary" style="font-family:'Quicksand';background-color:#9999ff;width:200px;"><a href="profile.html" onclick="profile()">Sign Up</a></button>
+<button id="back" class=" bttn-material-flat bttn-md bttn-primary" style="font-family:'Quicksand';width:200px;"><a href="index.html">Back </a></button>
+
+    </div>
+</form>
+</div>

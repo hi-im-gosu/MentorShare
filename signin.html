@@ -1,0 +1,46 @@
+<!--
+Below is the head
+!-->
+
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-messaging.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-functions.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+
+<!--
+Same format as signup page (two divs and form with action)
+!-->
+
+<div id="signin1">
+<h1 id="profilecom">Log in to change profile</h1>
+</div>
+<div id="signin2">
+<form id="signinform" action="javascript:login()">
+
+  <div class="container">
+    <label class="label" for="uname"><b>Username</b></label>
+    <input type="text" id="user" placeholder="Enter Username" name="uname" required>
+<br><br>
+    <label class="label" for="psw"><b>Password</b></label>
+    <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
+<br><br><br>
+    <button type="submit" class="signupbtn bttn-material-flat bttn-md bttn-primary" ><a style="font-family:'Quicksand';background-color:#9999ff;width:200px;" href="profile.html;text-decoration:none;">Log In</a></button>
+    <button id="back" class="signupbtn bttn-material-flat bttn-md bttn-primary" style="font-family:'Quicksand';width:200px;"><a href="index.html">Back </a></button>
+
+    <label class="label"><br><br><br><br>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  </div>
+</form>
+</div>

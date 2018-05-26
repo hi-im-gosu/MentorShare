@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+This is the search page
+!-->
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Search for a mentor</title>
+      <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+  <!--
+onsubmit="submitFn()" :::::: the submitFn() function is run when the form is submitted
+  !-->
+  <form onsubmit="search();">
+    <div class="search-wrapper">
+        <div class="input-holder">
+            <input type="text" id="search" class="search-input" placeholder="Search by keyword" />
+            <button class="search-icon" onclick="searchToggle(this, event);search()"><span></span></button>
+        </div>
+        <span class="close" onclick="searchToggle(this, event);"></span>
+        <div class="result-container">
+
+        </div>
+    </div>
+</form>
+
+<!--
+Linking JQuery:
+!-->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+
+    <script src="search.js"></script>
+    <script src="script.js"></script>
+
+    <a style="font-family:'Quicksand';color:white;text-decoration:none;margin-left:50px;position:absolute;margin-top:50px;font-size:50px;" href="index.html" >Back</a>
+
+
+
+
+
+
+
+
+
+    <a href="julie.html" style="margin-left:900px;margin-top:340px;position:absolute;color:transparent;">lol</a>
+
+    <a href="jason.html" style="margin-left:900px;margin-top:380px;position:absolute;color:transparent;">lol</a>
+
+
+
+</body>
+
+
+</html>

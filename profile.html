@@ -1,0 +1,51 @@
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-messaging.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-functions.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
+  <script src="script.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+
+<!--
+Format:
+1. Two divs (first div is title, second div is form)
+2. Form: gets mentor's name, email, location, subject, and degree
+!-->
+
+<div id="profile">
+<h1 id="profilecom">Complete your profile</h1>
+
+</div>
+
+<div id="profileform">
+<form id="profileform1" action="javascript:profilec();" style="border:1px solid #ccc">
+
+    <label class="label" for="name"><b>Name</b></label>
+    <input type="text" id="realname" placeholder="Enter Name" name="name" required>
+<br><br>
+    <label class="label" for="workemail"><b>Email</b></label>
+    <input type="text" id="workemail" placeholder="Enter Work Email" name="workemail" required>
+<br><br>
+    <label class="label" for="city"><b>Your Location (City)</b></label>
+    <input type="text" id="location" placeholder="Enter City" name="city" required>
+<br><br>
+    <label class="label" for="subject"><b>Subject (Math, Biology, etc...)</b></label>
+    <input type="text" id="subject" placeholder="Enter Subject" name="subject" required>
+<br><br>
+    <label class="label" for="degree"><b>Degree (Bachelor, Master, pHd)</b></label>
+    <input type="text" id="degree" placeholder="Enter Degree" name="degree" required>
+<br><br><br>
+<!--
+The style="" part of the button below changes the CSS style of the button. This is needed because since so many classes are used, there will be overlapping. Using the style="" will override any styles the button already has.
+!-->
+    <button type="submit" class="signupbtn bttn-material-flat bttn-md bttn-primary" style="font-family:'Quicksand';background-color:#9999ff;width:200px;"><a href="index.html" onclick="profile()">Complete</a></button>
+
+</form>
+</div>

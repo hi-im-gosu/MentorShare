@@ -1,0 +1,57 @@
+<!--
+Website created by Brandon Yang (MAY 2018)
+MentorShare
+
+HOMEPAGE
+!-->
+
+<!--
+HTML Head: contains all links (links to Firebase and to CSS and Javascript files)
+
+List of all files connecting to website:
+index.html
+userapp.html (signup page)
+signin.html (signin page)
+profile.html (profile form page)
+style.css (CSS page for all pages excluding search.html)
+script.js (Javascript for all pages excluding search.html)
+search.html (page for student-mentor searching)
+search.js (javascript for search page)
+searchcss.css (CSS for search page)
+!-->
+
+<html>
+	<head>
+		<title>MentorShare</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+		  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+		  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
+		  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+		  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-firestore.js"></script>
+		  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-messaging.js"></script>
+		  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-functions.js"></script>
+		  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
+		  <script src="script.js"></script>
+		  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+	</head>
+	<body>
+
+<!--
+Below is the div containing the background image and also the three buttons (log in, sign up, search)
+!-->
+
+<div id="top">
+
+<a href="userapp.html"><h2 id="signup">Sign Up Now</h2></a>
+<a href="signin.html"><h2 id="signin">Log In</h2></a>
+<a href="search.html"><h2 id="about">Find a Mentor</h2></a>
+
+</div>
+
+	</body>
+</html>
